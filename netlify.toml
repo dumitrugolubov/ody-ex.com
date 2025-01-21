@@ -1,0 +1,23 @@
+[[redirects]]
+  from = "http://www.ody-ex.com/*"
+  to = "https://ody-ex.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.ody-ex.com/*"
+  to = "https://ody-ex.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://ody-ex.com/*"
+  to = "https://ody-ex.com/:splat"
+  status = 301
+  force = true
+
+# Enable HSTS
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
